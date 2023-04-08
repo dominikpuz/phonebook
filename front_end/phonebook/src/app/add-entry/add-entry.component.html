@@ -1,0 +1,16 @@
+<div class="container">
+  <form>
+    <h1>Add entry to phonebook</h1>
+    <div>
+      <label for="name">Name: </label>
+      <input [(ngModel)]="name" name="name" id="name">
+    </div>
+    <div>
+      <label for="phoneNumber">Phone number: </label>
+      <input [(ngModel)]="phoneNumber" name="phoneNumber" id="phoneNumber">
+    </div>
+    <div class="add-button">
+      <button (click)="onSubmit()">Add</button>
+    </div>
+  </form>
+</div>

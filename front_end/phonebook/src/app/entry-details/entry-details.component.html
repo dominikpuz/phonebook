@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="entry" *ngIf="entry">
+    <div class="name">
+      <p>{{entry.name}}</p>
+    </div>
+    <div class="phoneNumber">
+      <p>Tel: <a href="tel:{{entry.phoneNumber}}">{{entry.phoneNumber}}</a></p>
+    </div>
+    <div class="buttons">
+      <div class="edit-button" routerLink="edit">
+      <span class="material-symbols-outlined">
+        edit
+    </span>
+      </div>
+      <div class="delete-button" (click)="delete(entry.id)">
+      <span class="material-symbols-outlined">
+        delete
+      </span>
+      </div>
+    </div>
+  </div>
+</div>

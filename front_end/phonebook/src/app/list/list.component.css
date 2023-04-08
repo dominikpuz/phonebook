@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.entry {
+  background-color: lightgray;
+  width: 60%;
+  height: 8vh;
+  border: lightgreen 2px solid;
+  border-radius: 20px;
+  margin: 1%;
+  display: grid;
+  grid-template-columns: repeat(2, 40%) 20%;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+}
+
+.name {
+  grid-area: 1 / 1 / 2 / 2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.phoneNumber {
+  grid-area: 1 / 2 / 2 / 3;
+  text-align: center;
+}
+
+.phoneNumber  a {
+  text-decoration: none;
+}
+
+.delete-button {
+  grid-area: 1 / 3 / 2 / 4;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  color: red;
+}
+
+.add {
+  width: 100%;
+  height: 5vh;
+}
+
+.add > button {
+  width: 10%;
+  height: 70%;
+  border-radius: 20px;
+  background-color: lawngreen;
+  border: darkgreen 2px solid;
+  outline: none;
+}
